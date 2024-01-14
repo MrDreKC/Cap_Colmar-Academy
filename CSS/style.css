@@ -1,1 +1,561 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1{
+  font-weight: normal;
+  color: grey;
+  font-size: 32px;
+  margin-left: 24px;
+  margin: 32px;
+}
+
+strong {
+  font-weight: bold;
+  color: #414346 ;
+}
+
+header p {
+  margin-right: 24px;
+  word-spacing: 2px;
+  font-size: 24px;
+}
+
+#banner {
+  background: lightgrey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50em;
+}
+#img {
+  border: 1px solid black;
+  margin: 44px 28px;
+  width: 45em;
+}
+
+#banner-text {
+  margin: auto;
+  width: 100%;
+}
+
+#banner-text h2 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #333435;
+  margin-right: 2em;
+  margin-left: .3em
+}
+
+#banner-text p {
+  font-weight: bold;
+  color: #4F4F54;
+  font-size: 25px;
+  margin: 48px 80px 48px 24px;
+}
+
+#banner-text h4 {
+  background: #333435;
+  width: 20em;
+  height: 60px;
+  padding: 16px 0;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 48px 40px 48px 24px;
+} 
+
+#info-main {
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#img2 {
+  border: 2px solid black;
+  margin: 44px 28px; 
+  height: 30em;
+  width: 45em;
+}
+
+#info-text {
+  text-align: left;
+}
+
+#info-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333435;
+  margin: 0 28px 48px;
+}
+
+#info-text p {
+  margin: 0 28px;
+  font-size: 17px;
+  line-height: 3.5vh;
+}
+
+#info-text h3 {
+  margin: 32px 28px 0px;
+  font-size: 16px;
+  font-weight: normal;
+
+}
+
+#info-list {
+  margin: 4px 0 0px;
+  border-left: 1px solid lightgray;
+  display: grid;
+}
+
+#orient {
+  border-bottom: 4px double lightgray;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0px 2px;
+}
+
+#orient-text {
+  margin-top: 20px;
+  margin-left: -4em;
+  line-height: 5vh;
+}
+
+#orient-text h3 {
+  font-size: 32px;
+}
+
+#orient-text p {
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#orient-text a {
+  text-decoration: none;
+  color: #3B9AF4;
+  font-size: 36
+  px;
+}
+
+#img3 {
+  border: 2px solid black;
+  margin: 44px 28px 28px;
+  height: 13em;
+  width: 13em;
+}
+
+#campus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#campus-text {
+  margin-top: 20px;
+  margin-left: -4em;
+  line-height: 5vh;
+}
+
+#campus-text h3 {
+  font-size: 32px;
+  font-family: arial;
+}
+
+#campus-text p {
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#campus-text a {
+  text-decoration: none;
+  color: #3B9AF4;
+  font-size: 36
+  px;
+}
+
+#img4 {
+  border: 2px solid black;
+  margin: 28px 0 28px 28px;
+  height: 13em;
+  width: 13em;
+  float: left;
+}
+
+#lecture {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: lightgrey;
+  margin-bottom: 5em;
+}
+
+#lecture-text {
+  margin-top: 20px;
+  margin-left: -4em;
+  line-height: 4vh;
+  padding-right: 28px;
+}
+
+#lecture-text h3 {
+  font-size: 32px;
+  margin-bottom: 2px;
+}
+
+#lecture-text p {
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#lecture-text a {
+  text-decoration: none;
+  color: #3B9AF4;
+  font-size: 36
+  px;
+}
+
+#img5 {
+  border: 2px solid black;
+  margin: 28px 28px;
+  height: 13em;
+  width: 13em;
+  float: left;
+}
+
+#classes {
+  background: #EFF0F1;
+  height: 72em;
+}
+
+#classes h2 {
+  text-align: center;
+  padding: 64px 0px;
+  font-size: 48px;
+}
+
+#class-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0px 72px;
+  padding: 0 32px;
+}
+
+#img6 {
+  border-bottom: 1px solid black;
+  height: 12em;
+  width: 24em;
+}
+
+#software-engineering {
+  background: white;
+  margin-right: 37px;
+  margin-bottom: 32px;
+  height: 27em;
+}
+
+#software-engineering h3 {
+  font-size: 30px;
+  padding: 24px 16px 16px;
+}
+
+#software-engineering h4 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 16px 16px 4px;
+  line-height: 8px;
+}
+
+#software-engineering p {
+  font-size: 20px;
+  padding: 16px;
+  line-height: 1.6em;
+}
+
+#img7 {
+  border-bottom: 1px solid black;
+  height: 12em;
+  width: 24em;
+}
+
+#computer-art {
+  background: white;
+  margin-right: 37px;
+  margin-bottom: 32px;
+  height: 27em;
+}
+
+#computer-art h3 {
+  font-size: 30px;
+  padding: 24px 16px 16px;
+}
+
+#computer-art h4 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 16px 16px 4px;
+  line-height: 8px;
+}
+
+#computer-art p {
+  font-size: 20px;
+  padding: 16px;
+  padding-right: 24px;
+  line-height: 1.6em;
+}
+
+#img8 {
+  border-bottom: 1px solid black;
+  height: 12em;
+  width: 24em;
+}
+
+#design {
+  background: white;
+  margin-right: 37px;
+  margin-bottom: 32px;
+  height: 27em;
+}
+
+#design h3 {
+  font-size: 30px;
+  padding: 24px 16px 16px;
+}
+
+#design h4 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 16px 16px 4px;
+  line-height: 8px;
+}
+
+#design p {
+  font-size: 20px;
+  padding: 16px;
+  line-height: 1.6em;
+}
+
+#img9 {
+  border-bottom: 1px solid black;
+  height: 12em;
+  width: 24em;
+}
+
+#data {
+  background: white;
+  margin-right: 37px;
+  margin-bottom: 32px;
+  height: 27em;
+}
+
+#data h3 {
+  font-size: 30px;
+  padding: 24px 16px 16px;
+}
+
+#data h4 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 16px 16px 4px;
+  line-height: 8px;
+}
+
+#data p {
+  font-size: 20px;
+  padding: 16px;
+  line-height: 1.6em;
+}
+
+#img10 {
+  border-bottom: 1px solid black;
+  height: 12em;
+  width: 24em;
+}
+
+#business {
+  background: white;
+  margin-right: 37px;
+  margin-bottom: 32px;
+  height: 27em;
+}
+
+#business h3 {
+  font-size: 30px;
+  padding: 24px 16px 16px;
+}
+
+#business h4 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 16px 16px 4px;
+  line-height: 8px;
+}
+
+#business p {
+  font-size: 20px;
+  padding: 16px;
+  line-height: 1.6em;
+}
+
+#img11 {
+  border-bottom: 1px solid black;
+  height: 12em;
+  width: 24em;
+}
+
+#marketing {
+  background: white;
+  margin-right: 37px;
+  margin-bottom: 32px;
+  height: 27em;
+}
+
+#marketing h3 {
+  font-size: 30px;
+  padding: 24px 16px 16px;
+}
+
+#marketing h4 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 16px 16px 4px;
+  line-height: 8px;
+}
+
+#marketing p {
+  font-size: 20px;
+  padding: 16px;
+  line-height: 1.6em;
+}
+
+#thesis {
+  background: white;
+  grid-template-columns: 1fr 1fr;
+  height: 63em;
+}
+
+#thesis h2 {
+  text-align: center;
+  padding: 64px 0px;
+  font-size: 48px;
+}
+
+#thesis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#video1 {
+  border: 2px solid black;
+  margin: 0 28px; 
+  height: 37em;
+  width: 45em;
+}
+
+#urban-content h2 {
+  font-size: 32px;
+  text-align: left;
+  margin: 24px 28px;
+  padding: 0px;
+}
+
+#urban-content p {
+  margin: 0 28px 32px;
+  font-size: 18px;
+  line-height: 3.5vh;
+}
+
+#img12 {
+  border: 2px solid black;
+  margin: 0px 20px;
+  height: 13em;
+  width: 13em;
+}
+
+#fisma {
+  background: lightgrey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 16em;
+}
+
+#fisma-text {
+  margin-left: -4em;
+  margin-right: 2em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+#fisma-text h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#fisma-text p {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+#img13 {
+  border: 2px solid black;
+  margin: 24px 20px 0px;
+  height: 13em;
+  width: 13em;
+}
+
+#new-york {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 12em;
+}
+
+#newyork-text {
+  margin-left: -4em;
+  margin-right: 2em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+#newyork-text h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#newyork-text p {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+hr {
+  margin: 16px 4px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 28px;
+  height: 6em;
+}
+
+#terms {
+  word-spacing: 20px;
+}
