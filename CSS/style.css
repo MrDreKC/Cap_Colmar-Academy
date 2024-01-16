@@ -55,6 +55,10 @@ header p {
 }
 /*Section End - Header*/
 
+#border {
+  border: 2px solid lightgrey;
+}
+
 /*Section Start - Learn Something New */
 #banner-main {
   background-color: lightgrey;
@@ -265,7 +269,7 @@ header p {
 
 /*Section Start - Classes */
 #classes-main {
-  background: #EFF0F1;
+  background: lightgrey;
   height: 68em;
 }
 
