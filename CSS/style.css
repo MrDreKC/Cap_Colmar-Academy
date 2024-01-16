@@ -9,27 +9,38 @@ body {
 }
 
 #page-body {
-  border: 5px solid orange;
   display: block;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  border: 4px solid orange;
 }
 
-/*Section Start - Nav*/
+/*Section Start - Header*/
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 32px;
 }
 
-h1{
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 32px;
+}
+
+#logo h1{
   font-weight: normal;
   color: grey;
   font-size: 32px;
-  margin-left: 24px;
-  margin: 32px;
+  margin-left: 16px;
+}
+
+#logo img {
+  transform: scale(2);
 }
 
 strong {
@@ -42,7 +53,7 @@ header p {
   word-spacing: 3px;
   font-size: 24px;
 }
-/*Section Start - Nav*/
+/*Section End - Header*/
 
 /*Section Start - Learn Something New */
 #banner-main {
@@ -101,7 +112,6 @@ header p {
 /*Section End - Learn Something New */
 
 /*Section Start - More Info */
-
 #campus-main {
   display: flex;
 }
@@ -126,27 +136,27 @@ header p {
   font-size: 42px;
   font-weight: bold;
   color: #333435;
-  margin: 32px 0px;
-  margin-bottom: 12px;
+  margin: 24px 0px;
 }
 
 #info-text p {
   font-size: 18px;
   line-height: 4vh;
-  margin: 24px 0px;
+  padding-right: 36px;
   margin-bottom: 24px;
 }
 
 #info-text h3 {
   font-size: 18px;
   font-weight: normal;
-  margin: 24px 0px;
+  margin: 32px 0px;
 }
 
 #info-list {
   border-left: 2px solid lightgray;
   width: 50%;
   margin-top: 2px;
+  margin-right: 2px;
 }
 
 .panel {
@@ -162,7 +172,7 @@ header p {
 
 #orient-text {
   width: 65%;
-  line-height: 40px;
+  line-height: 35px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -194,7 +204,7 @@ header p {
 
 #campus-text {
   width: 65%;
-  line-height: 40px;
+  line-height: 35px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -226,7 +236,7 @@ header p {
 
 #lecture-text {
   width: 65%;
-  line-height: 40px;
+  line-height: 35px;
   padding-left: 24px;
   padding-right: 36px;
 }
@@ -256,21 +266,20 @@ header p {
 /*Section Start - Classes */
 #classes-main {
   background: #EFF0F1;
-  border: 2px solid red;
-  height: 70em;
+  height: 68em;
 }
 
 #classes-main h2 {
   text-align: center;
-  padding: 32px 0px;
   font-size: 48px;
+  padding: 32px 0px;
 }
 
 #class-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: 0 72px;
+  margin: 0px 72px;
   grid-gap: 32px;
 }
 
@@ -303,118 +312,109 @@ header p {
 /*Section End - Classes */
 
 /*Section Start - Thesis */
-#thesis {
-  background: white;
-  grid-template-columns: 1fr 1fr;
-  height: 63em;
-}
-
-#thesis h2 {
+#thesis-main h2 {
   text-align: center;
-  padding: 64px 0px;
+  padding: 32px 0px;
   font-size: 48px;
 }
 
-#thesis-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+#thesis-body {
+  display: flex;
 }
 
-#video1 {
-  border: 2px solid black;
-  margin: 0 28px; 
-  height: 37em;
-  width: 45em;
+#urban-main{
+  width: 60%;
+  margin: 0px 24px;
+  margin-bottom: 24px;
 }
 
-#urban-content h2 {
+#urban-main video {
+  width: 100%;
+}
+
+#urban-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#urban-text h3 {
   font-size: 32px;
-  text-align: left;
-  margin: 24px 28px;
-  padding: 0px;
+  font-weight: bold;
+  color: #333435;
+  margin-top: 24px;
+  margin-bottom: 8px;
 }
 
-#urban-content p {
-  margin: 0 28px 32px;
+#urban-text p {
   font-size: 18px;
-  line-height: 3.5vh;
+  line-height: 4vh;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  padding-right: 24px;
 }
 
-#img12 {
-  border: 2px solid black;
-  margin: 0px 20px;
-  height: 13em;
-  width: 13em;
+#urban-list {
+  width: 48%;
+  margin-right: 12px;
 }
 
 #fisma {
   background: lightgrey;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  height: 16em;
 }
 
 #fisma-text {
-  margin-left: -4em;
-  margin-right: 2em;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  width: 65%;
+  line-height: 40px;
+  padding-left: 24px;
+  padding-right: 36px;
 }
 
 #fisma-text h3 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 28px;
 }
 
 #fisma-text p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: normal;
-  line-height: 30px;
 }
 
-#img13 {
-  border: 2px solid black;
-  margin: 24px 20px 0px;
-  height: 13em;
-  width: 13em;
+#fisma img {
+  width: 35%;
+  padding: 16px;
+  padding-right: 0px;
 }
 
 #new-york {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  height: 12em;
+  margin-top: 24px;
 }
 
 #newyork-text {
-  margin-left: -4em;
-  margin-right: 2em;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  width: 65%;
+  line-height: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 #newyork-text h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 28px;
 }
 
 #newyork-text p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: normal;
-  line-height: 30px;
+}
+
+#new-york img {
+  width: 35%;
+  padding: 16px;
+  padding-right: 0px;
 }
 /*Section End- Thesis*/
-
-hr {
-  margin: 16px 4px;
-}
-
 footer {
   display: flex;
   justify-content: space-between;
   margin: 24px 28px;
-  height: 6em;
+  height: 10vh;
 }
 
 #terms {
